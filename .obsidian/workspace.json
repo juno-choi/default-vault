@@ -11,15 +11,14 @@
             "id": "d4968a1ddea14972",
             "type": "leaf",
             "state": {
-              "type": "split-diff-view",
+              "type": "markdown",
               "state": {
-                "aFile": ".claude/commands/daily.md",
-                "bFile": ".claude/commands/daily.md",
-                "aRef": "HEAD",
-                "bRef": ""
+                "file": "CLAUDE.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "diff",
-              "title": "Diff: daily  (Index)"
+              "icon": "lucide-file",
+              "title": "CLAUDE"
             }
           }
         ]
@@ -95,6 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "CLAUDE.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "백링크"
+              "title": "CLAUDE 의 백링크"
             }
           },
           {
@@ -113,11 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "CLAUDE.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "나가는 링크"
+              "title": "CLAUDE 의 나가는 링크"
             }
           },
           {
@@ -155,12 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "CLAUDE.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "개요"
+              "title": "CLAUDE 의 개요"
             }
           },
           {
@@ -194,11 +196,20 @@
   },
   "active": "d4968a1ddea14972",
   "lastOpenFiles": [
+    "README.md",
+    "CLAUDE.md",
+    "STRUCTURE.md",
+    "workspace/6_etcs",
+    "workspace/5_reference",
+    "workspace/4_hand_off",
+    "workspace/3_projects",
+    "workspace/2_weekly",
+    "workspace/1_daily",
+    "workspace",
     "template/prompt.md",
     "template/todo.md",
     "template/review.md",
     "template/project.md",
-    "STRUCTURE.md",
     "template",
     "환영합니다!.md"
   ]

@@ -16,8 +16,8 @@ Obsidian Vault 기반 업무 자동화 시스템. 일일 할일 관리, 주간 �
 
 ### 프로젝트 상태 관리
 - YAML frontmatter 사용: `created`, `deadline`, `status` 필드
-- status 값: `discovery`(기획중) → `in-progress`(진행중) → `complete`(완료)
-- hand-off 이동 시 `completed` 필드 추가, 기존 status 유지
+- status 값: `discovery`(기획중) → `in-progress`(진행중) → `done`(완료)
+- done 이동 시 `done` 필드 추가, 기존 status 유지
 
 ### 파일 처리 원칙
 - 템플릿은 `template/` 폴더의 파일을 기반으로 생성
@@ -29,7 +29,7 @@ Obsidian Vault 기반 업무 자동화 시스템. 일일 할일 관리, 주간 �
 모든 응답은 한국어로 작성. 코드와 식별자는 영어 유지.
 
 ---
-## 회사 정보
+## 프로젝트 정보
 
 ### 도메인
 

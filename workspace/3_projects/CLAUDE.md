@@ -14,4 +14,4 @@
 - `/project` skill로 인터뷰를 통해 생성한다.
 - YAML frontmatter로 상태를 관리한다: `created`, `deadline`, `status`
 - status 흐름: `discovery`(기획중) → `in-progress`(진행중) → `complete`(완료)
-- 완료된 프로젝트는 `/hand-off` skill로 `4_hand_off/`로 이동한다.
+- 완료된 프로젝트는 `/done` skill로 `4_done/`으로 이동한다.

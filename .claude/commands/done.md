@@ -1,6 +1,6 @@
-# Hand-off 프로젝트 완료 이동
+# Done 프로젝트 완료 이동
 
-완료된 프로젝트를 `workspace/3_projects/`에서 `workspace/4_hand_off/`로 이동한다.
+완료된 프로젝트를 `workspace/3_projects/`에서 `workspace/4_done/`으로 이동한다.
 
 ## 실행 조건
 
@@ -45,7 +45,7 @@
 1. 2026-03-01_todo_list (현재: in-progress)
 3. 2026-02-15_batch_job (현재: in-progress)
 
-위 프로젝트를 완료 처리하고 hand_off로 이동할까요? (Y/n)
+위 프로젝트를 완료 처리하고 done으로 이동할까요? (Y/n)
 ```
 
 사용자가 거부하면 1단계로 돌아간다.
@@ -81,12 +81,12 @@ YAML frontmatter가 있는 모든 `.md` 파일에 동일하게 적용한다.
 
 ### 4단계: 폴더 이동
 
-`workspace/3_projects/{프로젝트 폴더}` → `workspace/4_hand_off/{프로젝트 폴더}`
+`workspace/3_projects/{프로젝트 폴더}` → `workspace/4_done/{프로젝트 폴더}`
 
 - 폴더명은 변경하지 않는다.
-- `4_hand_off/`에 동일한 이름의 폴더가 이미 있으면 사용자에게 알린다:
+- `4_done/`에 동일한 이름의 폴더가 이미 있으면 사용자에게 알린다:
   ```
-  ⚠️ 4_hand_off/2026-03-01_todo_list 가 이미 존재합니다.
+  ⚠️ 4_done/2026-03-01_todo_list 가 이미 존재합니다.
   1. 덮어쓰기
   2. 건너뛰기
   ```
@@ -94,15 +94,15 @@ YAML frontmatter가 있는 모든 `.md` 파일에 동일하게 적용한다.
 ### 5단계: 결과 보고
 
 ```
-✅ Hand-off 완료
+✅ Done 완료
 
 📁 2026-03-01_todo_list
-  → workspace/4_hand_off/2026-03-01_todo_list
+  → workspace/4_done/2026-03-01_todo_list
   status: in-progress → complete
   completed: 2026-03-25
 
 📁 2026-02-15_batch_job
-  → workspace/4_hand_off/2026-02-15_batch_job
+  → workspace/4_done/2026-02-15_batch_job
   status: in-progress → complete
   completed: 2026-03-25
 

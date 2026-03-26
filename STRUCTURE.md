@@ -26,7 +26,7 @@ workspace
   	ㄴ2_plan.md
   	ㄴ3_phase.md
     ...
-ㄴ4_hand_off
+ㄴ4_done
   ㄴ{yyyy-MM-dd}_complete_project
   	ㄴ1_prd.md
 ㄴ5_reference
@@ -164,9 +164,9 @@ status: {status}
 ```
 
 
-## hand_off
+## done
 - 진행이 완료된 프로젝트 이동
-- skill을 통해 완료된 프로젝트는 자동으로 projects에서 hand_off로 이동
+- skill을 통해 완료된 프로젝트는 자동으로 projects에서 done으로 이동
 - 이동 시 YAML frontmatter의 status 필드는 유지 (이력 추적용)
 
 ## reference

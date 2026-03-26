@@ -34,12 +34,15 @@ bdacs/
 
 ## Skills
 
-| 명령어         | 기능                                        |
-| ----------- | ----------------------------------------- |
-| `/daily`    | 오늘 날짜 daily 폴더 생성. 이전 미완료 항목, 공지사항 자동 이월  |
-| `/weekly`   | 해당 주차 daily 데이터를 수집하여 주제별 분류/요약 회고 생성     |
-| `/project`  | 인터뷰를 통해 새 프로젝트 폴더 + 초기 PRD 파일 생성          |
-| `/done`     | 프로젝트 목록에서 선택 → complete 처리 + done으로 이동   |
+| 명령어          | 기능                                                  |
+| ------------ | --------------------------------------------------- |
+| `/daily`     | 오늘 날짜 daily 폴더 생성. 이전 미완료 항목, 공지사항 자동 이월            |
+| `/weekly`    | 해당 주차 daily 데이터를 수집하여 주제별 분류/요약 회고 생성               |
+| `/project`   | 인터뷰를 통해 새 프로젝트 폴더 + requirements, PRD 파일 생성          |
+| `/tech-spec` | requirements + prd 분석하여 기술 명세(tech_spec) 생성           |
+| `/plan`      | requirements + prd + tech_spec 분석하여 plan + phase 파일 생성 |
+| `/handoff`   | phase 실행 결과를 분석하여 handoff 파일 생성 + plan 업데이트           |
+| `/done`      | 프로젝트 목록에서 선택 → complete 처리 + done으로 이동               |
 
 ## 프로젝트 상태 흐름
 

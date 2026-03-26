@@ -13,7 +13,7 @@
 
 `workspace/3_projects/` 아래 모든 프로젝트 폴더를 탐색한다.
 
-각 프로젝트의 첫 번째 `.md` 파일(보통 `1_prd.md`)에서 YAML frontmatter를 읽어 메타데이터를 수집한다.
+각 프로젝트의 첫 번째 `.md` 파일(보통 `1_requirements.md`)에서 YAML frontmatter를 읽어 메타데이터를 수집한다.
 
 프로젝트 목록을 아래 형식으로 출력한다:
 

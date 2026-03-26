@@ -50,20 +50,39 @@
 ### 3단계: 폴더 및 초기 파일 생성
 
 1. `workspace/3_projects/{yyyy-MM-dd}_{프로젝트명}/` 폴더를 생성한다.
-2. 폴더 안에 `1_prd.md` 파일 하나만 생성한다:
+2. 폴더 안에 아래 두 파일을 생성한다:
 
+**`1_requirements.md`:**
 ```md
 ---
 created: {yyyy-MM-dd}
 deadline: {마감일 또는 TBD}
 status: discovery
+tags:
+---
+
+# 요구사항
+
+# 개발 진행시 필요한 지식
+
+# 개발에 필요한 내부 정보 (ai는 모르는 내부 정보 기입)
+
+```
+
+**`2_prd.md`:**
+```md
+---
+created: {yyyy-MM-dd}
+deadline: {마감일 또는 TBD}
+status: discovery
+tags:
 ---
 
 # {프로젝트명}
 
 ```
 
-나머지 파일(tech_spec, plan 등)은 사용자가 직접 추가한다.
+나머지 파일(tech_spec, plan 등)은 사용자가 직접 추가하거나 별도 스킬로 생성한다.
 
 ### 4단계: 결과 보고
 
@@ -71,5 +90,6 @@ status: discovery
 ✅ 프로젝트 생성 완료
 
 📁 workspace/3_projects/2026-03-25_todo_list/
-  ✅ 1_prd.md 생성 (status: discovery)
+  ✅ 1_requirements.md 생성
+  ✅ 2_prd.md 생성 (status: discovery)
 ```

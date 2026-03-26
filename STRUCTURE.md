@@ -18,9 +18,16 @@ workspace
         ㄴW02_review.md
 ㄴ3_projects
   ㄴ{yyyy-MM-dd}_todo_list
-    ㄴ1_prd.md
-    ㄴ2_tech_spec.md
-    ㄴ3_plan.md
+    ㄴ1_requirements.md
+    ㄴ2_prd.md
+    ㄴ3_tech_spec.md
+    ㄴ4_plan.md
+    ㄴ5_phase_1.md
+    ㄴ5_hand_off_1.md
+    ㄴ5_phase_2.md
+    ㄴ5_hand_off_2.md
+    ㄴ5_phase_3.md
+    ㄴ5_hand_off_3.md
   ㄴ{yyyy-MM-dd}_project_2
   	ㄴ1_prd.md
   	ㄴ2_plan.md
@@ -148,12 +155,121 @@ ai의 답변 내용을 적음
 
 ## projects
 - 진행하고 있는 프로젝트 내용 정리
+
+### requirements.md
+- 요구 사항 및 개발 진행시 알고 있어야 할 사항들을 정리
+- 회의록, 요구사항, 개발에 진행시 필요한 지식, 개발에 필요한 내부 정보 등
+- project를 스킬로 생성시 자동으로 빈 파일로 생성
+```
+# 요구사항
+
+# 개발 진행시 필요한 지식
+
+# 개발에 필요한 내부 정보 (ai는 모르는 내부 정보 기입)
+
+```
+
+### prd.md
+- 기획에서 작성된 prd 문서
+- 링크를 알려주면 자동으로 confluence mcp를 통해 정보를 가져와서 md으로 작성
+
+### tech_spec.md
+- requirements.md 와 prd.md 기반의 개발 공유 문서 작성
+- 아래 template을 참고하여 진행
+```
+## 과제 명
+- 관련 링크 달기  
+- JIRA, PRD 등 참고 할만한 문서
+- GIT PR 링크 등..
+    
+
+## 요약
+- 간단한 요약 2줄 정도
+    
+## 배경
+- 어떤 문제를 해결하기 위해 ?
+- 왜 만드는지
+- 이전에 비슷한 시도가 있었는지
+    
+## 목표
+- 예상 결과
+    
+### 목표가 아닌것
+- 이번에 포함되지 말아야 할 것들
+- 이 기능 저 기능 붙이는 것 방지
+    
+
+### 계획
+- 어떻게 접근할 것인지
+- 결정못한 사항이 있다면 어떤 것들을 고려하고 있는지
+- 시퀀스 다이어그램, ERD 등을 포함하면 좋음
+- 로우 레벨 까지 다뤄야 한다면 HTTP 응답, JSON 요청/응답 포맷 등 모두 작성하기
+
+### 고려사항
+- 최초 고려 되었으나 제외하기로 결정된 사항들 작성
+    
+
+### 마일스톤
+- …
+    
+### 참고
+```
+- template과 skill을 만들어서 자동화 필요
+### plan.md
+- requirements.md, prd.md, tech_spec.md 문서를 분석하여 세부 계획을 세우고 phase 별로 진행할 계획을 세움
+- plan 이라는 skill을 통해 자동화 필요 + phase 파일들도 함께 생성
+```
+# Plan: 계획 제목
+
+## Goal
+- 어떤 일을 해내야하 하는지
+  
+## Inputs
+- requirements 경로
+- prd 경로
+- tech_spec 경로
+  
+## Done When
+- phase 체크
+- handoff 체크
+  
+## Steps
+- [ ] phase_1
+- [ ] phase_2
+- [ ] phase_3
+  ...
+```
+
+### phase_{number}.md
+- plan에서 만들어진 phase의 단계별 상세 실행 계획
+
+### handoff_{number}.md
+- phase에서 수행한 내역을 확인
+- handoff 라는 스킬을 통해 phase의 실행 내용을 체크하고 handoff에 진행한 내용을 기록
+```
+# Handoff_{number}
+
+## Finished
+- 끝낸일1
+- 끝낸일2
+
+## Blocked
+- 해당 업무는 xx 이유로 아직 못함
+
+## Changed
+- 기존 계획에서 변경된 내용
+  
+## Next
+- Phase_{number}
+```
+
 - status 값은 discovery(기획중), in-progress(진행중), complete(완료)
 ```md
 ---
 created: {yyyy-MM-dd}
 deadline: {yyyy-MM-dd}
 status: {status}
+tags: Tag1, Tag2
 ---
 
 # 업무 내용
@@ -167,7 +283,7 @@ status: {status}
 ## done
 - 진행이 완료된 프로젝트 이동
 - skill을 통해 완료된 프로젝트는 자동으로 projects에서 done으로 이동
-- 이동 시 YAML frontmatter의 status 필드는 유지 (이력 추적용)
+- 이동 시 status를 `complete`로 변경, `completed: {yyyy-MM-dd}` 필드 추가
 
 ## reference
 - 사용자가 직접 참고하고자 하는 내용들을 저장해둠

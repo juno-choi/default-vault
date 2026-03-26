@@ -15,9 +15,9 @@ Obsidian Vault 기반 업무 자동화 시스템. 일일 할일 관리, 주간 �
 - 프로젝트 폴더: `workspace/3_projects/{yyyy-MM-dd}_{프로젝트명}/`
 
 ### 프로젝트 상태 관리
-- YAML frontmatter 사용: `created`, `deadline`, `status` 필드
-- status 값: `discovery`(기획중) → `in-progress`(진행중) → `done`(완료)
-- done 이동 시 `done` 필드 추가, 기존 status 유지
+- YAML frontmatter 사용: `created`, `deadline`, `status`, `tags` 필드
+- status 값: `discovery`(기획중) → `in-progress`(진행중) → `complete`(완료)
+- done 이동 시 status를 `complete`로 변경, `completed: {yyyy-MM-dd}` 필드 추가
 
 ### 파일 처리 원칙
 - 템플릿은 `template/` 폴더의 파일을 기반으로 생성

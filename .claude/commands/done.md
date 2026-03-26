@@ -69,13 +69,14 @@ status: in-progress
 created: 2026-03-01
 deadline: 2026-03-30
 status: complete
+tags: Tag1, Tag2
 completed: 2026-03-25
 ---
 ```
 
 - `status`를 `complete`로 변경한다.
 - `completed` 필드를 추가하고 오늘 날짜를 넣는다.
-- 나머지 frontmatter 필드와 본문 내용은 그대로 유지한다.
+- 기존 `tags` 등 나머지 frontmatter 필드와 본문 내용은 그대로 유지한다.
 
 YAML frontmatter가 있는 모든 `.md` 파일에 동일하게 적용한다.
 

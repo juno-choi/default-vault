@@ -2,6 +2,7 @@
 created: {yyyy-MM-dd}
 deadline: {yyyy-MM-dd}
 status: discovery
+tags:
 ---
 
 # 업무 내용
